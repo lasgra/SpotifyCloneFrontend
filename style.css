@@ -1,0 +1,168 @@
+
+body {
+    background-color: rgb(19, 19, 19);
+}
+
+::-webkit-scrollbar {
+   width: 20px;
+   overflow: overlay;
+   background: #ffffff00;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #88888850;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaaaaaa2;
+  border-radius: 10px;
+}
+
+.simplebar-scrollbar::before {
+   background-color: #888888ad;
+}
+
+.currentsongautor {
+    color: rgb(141, 141, 141);
+}
+
+.currentsongname {
+    color: rgb(255, 255, 255);
+}
+
+.TimeOfSong {
+    color: rgb(255, 255, 255);
+}
+
+.TimeElapsed {
+    color: rgb(255, 255, 255);
+}
+
+.PlayMusicButton {
+    filter: brightness(1); 
+    position: absolute;
+    right: 18px;
+    bottom: 50px;
+    transition: 0.2s;
+    opacity: 0;
+    transition: transform .2s ease-out; 
+}
+.PlayMusicButton:hover {
+    transform:scale(1.15);
+}
+
+
+.SongPick {
+    -ms-flex: 0 0 153px;
+    flex: 0 0 153px;
+    transition: 0.2s;
+    background-color: rgb(26, 26, 26);
+}
+
+.SongPick:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.SongPick:hover .PlayMusicButton {
+    position: absolute;
+    right: 18px;
+    bottom: 65px;
+    opacity: 1;
+}
+
+.AnimationClick {
+    filter: brightness(0.25); 
+    transform:scale(1.15);
+}
+  
+.SongPageSongText {
+    font-size: 15px;
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 80%;
+}
+
+.SearchBar  {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    text-align: center;
+    position:relative;
+    padding:20px;
+    margin:0;
+}
+
+.SearchBarInput {
+    width: 45%;
+    line-height: 2em;
+    border-radius: 30px;
+    margin:0;
+    padding-left:54px;
+    font-size: 27px;
+}
+
+.SearchIcon {
+    position:absolute;
+    bottom:24px;
+    left:26px;
+}
+
+.SearchSong {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px; 
+    position: relative;
+}
+
+.MiddleAutorScroll {
+    height: 80vh;
+}
+
+.Dzielnik {
+    clear:both;
+    margin-bottom: 0px;
+    border: 0;
+    height: 24px;
+    background-image: linear-gradient(to right, rgb(46, 46, 46), transparent, rgb(46, 46, 46)), linear-gradient(transparent, rgb(0, 0, 0) 150%);    
+    background-image: -moz-linear-gradient(to right, rgb(46, 46, 46), transparent, rgb(46, 46, 46)), -webkit-linear-gradient(transparent, rgb(0, 0, 0) 150%);
+    background-image: -ms-linear-gradient(to right, rgb(46, 46, 46), transparent, rgb(46, 46, 46)), -webkit-linear-gradient(transparent, rgb(0, 0, 0) 150%);
+}
+
+.TransparentGradient {
+    background-image: linear-gradient(to top, rgba(46, 46, 46), rgb(46, 46, 46, 0));
+}
+
+.moving-text-parent {
+    width: 50%;
+    background-color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.moving-text {
+    display: inline-block;
+    color: #FFF;
+    padding-left: 25%;
+    animation: move 15s linear infinite;
+}
+@keyframes move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.SongLenghtMini {
+    top: 1px; 
+    position: absolute; 
+    background-color: rgb(73, 73, 73); 
+    height: 3px; 
+    margin-left: 1.5%; 
+    z-index: 9;
+}
